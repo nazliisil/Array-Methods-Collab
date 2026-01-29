@@ -1,6 +1,38 @@
 package Lab0;
 
+import java.util.Random;
+
 public class Array {
+
+    public static int[] randomArrayCreator(int length){
+        int[] newArray = new int[length];
+        Random rand = new Random();
+        for(int i = 0; i < length; i++) {
+            newArray[length] = rand.nextInt(101);
+        }
+        return newArray;
+    }
+    
+    public static int getMin(int[] array){
+        int min = 0;
+        for(int number : array) {
+            if(number < min) {
+                min = number;
+            }
+        }
+        return min;
+    }
+
+    public static int getMax(int[] array){
+        int max = 0;
+        for(int number : array) {
+            if(number > max) {
+                max = number;
+            }
+        }
+        return max;
+    }
+
     public static double average(int[] sampleArray){
         int sum=0;
         for(int i=0;i<sampleArray.length;i++){
