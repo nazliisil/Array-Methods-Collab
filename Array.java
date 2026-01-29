@@ -8,13 +8,13 @@ public class Array {
         int[] newArray = new int[length];
         Random rand = new Random();
         for(int i = 0; i < length; i++) {
-            newArray[length] = rand.nextInt(101);
+            newArray[i] = rand.nextInt(101);
         }
         return newArray;
     }
     
     public static int getMin(int[] array){
-        int min = 0;
+        int min = 101;
         for(int number : array) {
             if(number < min) {
                 min = number;
