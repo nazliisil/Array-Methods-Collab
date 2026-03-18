@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Pane layoutX="275.0" layoutY="145.0" prefHeight="275.0" prefWidth="245.0" style="-fx-background-color: D9D9D9;">
+         <children>
+            <Pane layoutX="2.5" layoutY="2.5" prefHeight="270.0" prefWidth="240.0" style="-fx-background-color: FFFFFF;">
+               <children>
+                  <TextField layoutX="10.0" layoutY="38.0" prefHeight="30.0" prefWidth="220.0" />
+                  <TextField layoutX="10.0" layoutY="95.0" prefHeight="30.0" prefWidth="220.0" />
+                  <Label layoutX="10.0" layoutY="20.0" text="First Name">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="102.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #385BAE;;" text="Continue" textFill="WHITE">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.4000000059604645" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  <Label layoutX="10.0" layoutY="210.0" />
+                  <Label layoutX="10.0" layoutY="77.0" text="Last Name">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="10.0" layoutY="152.0" prefHeight="30.0" prefWidth="220.0" />
+                  <Label layoutX="10.0" layoutY="134.0" text="Username">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Label layoutX="346.0" layoutY="36.0" text="Bil'Clubs">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="365.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/bilclubs%20logo%201.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="28.0" style="-fx-background-color: #385BAE;" text="&lt;" textFill="WHITE" />
+      <Button layoutX="52.0" layoutY="14.0" mnemonicParsing="false" onAction="#goFront" prefHeight="27.0" prefWidth="28.0" style="-fx-background-color: #385BAE;" text="&gt;" textFill="WHITE" />
+   </children>
+</Pane>
